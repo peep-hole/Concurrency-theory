@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Concurrency-theory.iml" filepath="$PROJECT_DIR$/.idea/Concurrency-theory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab3/Printers/Printers.iml" filepath="$PROJECT_DIR$/lab3/Printers/Printers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab3/TableReservations/TableReservations.iml" filepath="$PROJECT_DIR$/lab3/TableReservations/TableReservations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab1/zad1_zad2/zad1_zad2.iml" filepath="$PROJECT_DIR$/lab1/zad1_zad2/zad1_zad2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab1/zad3/zad3.iml" filepath="$PROJECT_DIR$/lab1/zad3/zad3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab2/zad_1/zad_1.iml" filepath="$PROJECT_DIR$/lab2/zad_1/zad_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab2/zad_2/zad_2.iml" filepath="$PROJECT_DIR$/lab2/zad_2/zad_2.iml" />
+    </modules>
+  </component>
+</project>
