@@ -29,13 +29,7 @@ public class Waiter {
     public Table bookTable(int id) throws InterruptedException {
 
         int condID = id/2;
-        int pairID;
-        if (id%2 == 0) {
-            pairID = id + 1;
-        }
-        else {
-            pairID = id - 1;
-        }
+        int pairID = getPairID(id);
 
         lock.lock();
 
@@ -66,14 +60,7 @@ public class Waiter {
     public void freeTable(int id) {
         isWaiting[id] = false;
 
-        int pairID;
-
-        if (id % 2 == 0) {
-            pairID = id + 1;
-        }
-        else {
-            pairID = id - 1;
-        }
+        int pairID = getPairID(id);
 
         if (!isWaiting[pairID]) {
             isTableTaken = false;
@@ -84,5 +71,18 @@ public class Waiter {
         tableTaken.signal();
 
         lock.unlock();
+    }
+
+    private int getPairID(int id) {
+        int pairID;
+
+        if (id % 2 == 0) {
+            pairID = id + 1;
+        }
+        else {
+            pairID = id - 1;
+        }
+
+        return pairID;
     }
 }
