@@ -6,9 +6,7 @@ public class Waiter {
 
     private final Lock lock = new ReentrantLock();
     private final Condition tableTaken = lock.newCondition();
-    private final int condNumber;
     private final Condition[] conditions;
-    private final int clientsNumber;
     private final boolean[] isWaiting;
     private final Table table;
     private boolean isTableTaken = false;
@@ -16,9 +14,8 @@ public class Waiter {
     public Waiter(int clientsNumber, Table table) {
 
         this.table = table;
-        condNumber = clientsNumber/2;
+        int condNumber = clientsNumber/2;
         conditions = new Condition[condNumber];
-        this.clientsNumber = clientsNumber;
         isWaiting = new boolean[clientsNumber];
 
         for (int i = 0; i < clientsNumber; ++i) {
