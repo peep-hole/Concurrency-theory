@@ -12,7 +12,7 @@ public class Mandelbrot extends JFrame {
 
     public Mandelbrot(int nThreads, int nParts,
                       boolean oneTaskOnePixel,
-                      LinkedList<TestResults> results) throws ExecutionException, InterruptedException {
+                      TestResults results) throws ExecutionException, InterruptedException {
 
 
         super("Mandelbrot Set");
@@ -54,7 +54,7 @@ public class Mandelbrot extends JFrame {
 
         long end = System.nanoTime();
 
-        results.add(new TestResults(nThreads, oneTaskOnePixel ? 800*600 : nParts , end-start));
+        results.addTime(end - start);
 
     }
 
