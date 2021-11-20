@@ -17,7 +17,7 @@ public class Producer implements Runnable{
             start = System.nanoTime();
             monitor.put(chunkSize);
             end = System.nanoTime();
-            monitor.saveTime(end-start);
+            monitor.saveTime(end-start, chunkSize);
         } catch (InterruptedException | IOException e) {
             e.printStackTrace();
         }

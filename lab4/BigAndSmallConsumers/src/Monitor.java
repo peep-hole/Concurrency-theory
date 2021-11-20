@@ -134,9 +134,9 @@ public class Monitor {
     }
 
 
-    public void saveTime(long time) throws IOException {
+    public void saveTime(long time, int buffer_size) throws IOException {
         FileWriter w = new FileWriter(file, true);
-        w.write(time + ";");
+        w.write(time + "," + buffer_size + ";");
         w.close();
     }
 
