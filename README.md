@@ -6,5 +6,5 @@
  3. [Mechanism concurrent.lock](https://github.com/peep-hole/Concurrency-theory/tree/main/lab3)
  4. [Synchronization tasks in java](https://github.com/peep-hole/Concurrency-theory/tree/main/lab4)
  5. [Mandelbrot](https://github.com/peep-hole/Concurrency-theory/tree/main/lab5)
- 6. [](https://github.com/peep-hole/Concurrency-theory/tree/main/lab6)
+ 6. [Concurrency basics in node.js](https://github.com/peep-hole/Concurrency-theory/tree/main/lab6)
  
